@@ -1,0 +1,51 @@
+** sch_path: /foss/designs/dac2bit.sch
+**.subckt dac2bit
+XM1 Vref b1 net1 0 sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM2 net1 b1_bar Vref Vref sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0
++ sd=0 mult=1
+XM4 0 b1_bar net1 0 sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM5 net1 b1 0 Vref sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM6 Vref b0 net2 0 sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM7 net2 b0_bar Vref Vref sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0
++ sd=0 mult=1
+XM8 0 b0_bar net2 0 sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XM9 net2 b0 0 Vref sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad=1.45 as=1.45 pd=10.58 ps=10.58 nrd=0.058 nrs=0.058 sa=0 sb=0 sd=0
++ mult=1
+XR1 net2 n0 net3 sky130_fd_pr__res_high_po_0p35 L=17.2 mult=1
+XR2 net1 n1 net4 sky130_fd_pr__res_high_po_0p35 L=17.2 mult=1
+V1 Vref 0 1.8
+Vb1_bar b1_bar 0 pulse(1.8 0 0 1n 1n 10u 20u)
+Vb1 b1 0 pulse(0 1.8 0 1n 1n 10u 20u)
+Vb0_bar b0_bar 0 pulse(1.8 0 0 1n 1n 5u 10u)
+Vb0 b0 0 pulse(0 1.8 0 1n 1n 5u 10u)
+XR4 n0 n1 net5 sky130_fd_pr__res_high_po_0p35 L=8.6 mult=1
+XR5 n1 Vout net6 sky130_fd_pr__res_high_po_0p35 L=8.6 mult=1
+XR6 n0 0 net7 sky130_fd_pr__res_high_po_0p35 L=17.2 mult=1
+**** begin user architecture code
+
+
+.lib /foss/pdks/ciel/sky130/versions/7b70722e33c03fcb5dabcf4d479fb0822d9251c9/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.options method=gear
+.options gmin=1e-12
+.options abstol=1e-12 reltol=1e-3
+
+.ic v(net1)=0 v(net2)=0 v(Vout)=0
+.tran 0.1u 80u uic
+
+.control
+run
+let n1_shift = v(n1) + 1
+let n0_shift = v(n0) + 2
+plot v(Vout) n1_shift n0_shift
+.endc
+
+
+**** end user architecture code
+**.ends
+.end
