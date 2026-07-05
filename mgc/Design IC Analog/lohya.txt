@@ -1,0 +1,212 @@
+loading history file ... 39 events added
+Use openwrapper to create a new GUI-based layout window
+Use closewrapper to remove a new GUI-based layout window
+
+Magic 8.3 revision 639 - Compiled on Fri May  8 08:11:12 WIB 2026.
+Starting magic under Tcl interpreter
+Using Tk console window
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=10240]
+Using TrueColor, VisualID 0x23 depth 24
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+New windows will not have a title caption.
+New windows will not have scroll bars.
+New windows will not have a border.
+Repainting console in magic layout window colors
+Cell dac_2bit read from current working directory
+Using technology "sky130A", version 1.0.583-0-g1e931c9
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   0.010 x 0.010   ( 0.000,  0.000), ( 0.010,  0.010)  0.000     
+lambda:     1.00 x 1.00    (  0.00,  0.00 ), (  1.00,  1.00 )  1.00      
+internal:      2 x 2       (     0,  0    ), (     2,  2    )  4         
+Main console display active (Tcl8.6.14 / Tk8.6.14)
+% source place_dac_2bit.tcl
+
+=== place_dac_2bit.tcl : assembling DAC core from existing device cells ===
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  2000.000 x 2000.000  (-1000.000, -1000.000), ( 1000.000,  1000.000)  4000000.000
+lambda:   200000.00 x 200000.00  (-100000.00, -100000.00), ( 100000.00,  100000.00)  40000000000.00
+internal: 400000 x 400000  (-200000, -200000), ( 200000,  200000)  160000000000
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)
+lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+internal:      0 x 0       (     0,  0    ), (     0,  0    )
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 4.000,  22.000), ( 5.000,  23.000)  1.000     
+lambda:   100.00 x 100.00  ( 400.00,  2200.00), ( 500.00,  2300.00)  10000.00  
+internal:    200 x 200     (   800,  4400 ), (  1000,  4600 )  40000     
+Cell sky130_fd_pr__pfet_01v8_7HN6Y2 read from current working directory
+  placed sky130_fd_pr__pfet_01v8_7HN6Y2 at 4,22 um
+Loading DRC CIF style.Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 4.000,  7.000), ( 5.000,  8.000)  1.000     
+lambda:   100.00 x 100.00  ( 400.00,  700.00), ( 500.00,  800.00)  10000.00  
+internal:    200 x 200     (   800,  1400 ), (  1000,  1600 )  40000     
+Cell sky130_fd_pr__nfet_01v8_34VMYE read from current working directory
+  placed sky130_fd_pr__nfet_01v8_34VMYE at 4,7 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 14.000,  22.000), ( 15.000,  23.000)  1.000     
+lambda:   100.00 x 100.00  ( 1400.00,  2200.00), ( 1500.00,  2300.00)  10000.00  
+internal:    200 x 200     (  2800,  4400 ), (  3000,  4600 )  40000     
+  placed sky130_fd_pr__pfet_01v8_7HN6Y2 at 14,22 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 14.000,  7.000), ( 15.000,  8.000)  1.000     
+lambda:   100.00 x 100.00  ( 1400.00,  700.00), ( 1500.00,  800.00)  10000.00  
+internal:    200 x 200     (  2800,  1400 ), (  3000,  1600 )  40000     
+  placed sky130_fd_pr__nfet_01v8_34VMYE at 14,7 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 24.000,  22.000), ( 25.000,  23.000)  1.000     
+lambda:   100.00 x 100.00  ( 2400.00,  2200.00), ( 2500.00,  2300.00)  10000.00  
+internal:    200 x 200     (  4800,  4400 ), (  5000,  4600 )  40000     
+  placed sky130_fd_pr__pfet_01v8_7HN6Y2 at 24,22 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 24.000,  7.000), ( 25.000,  8.000)  1.000     
+lambda:   100.00 x 100.00  ( 2400.00,  700.00), ( 2500.00,  800.00)  10000.00  
+internal:    200 x 200     (  4800,  1400 ), (  5000,  1600 )  40000     
+  placed sky130_fd_pr__nfet_01v8_34VMYE at 24,7 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 34.000,  22.000), ( 35.000,  23.000)  1.000     
+lambda:   100.00 x 100.00  ( 3400.00,  2200.00), ( 3500.00,  2300.00)  10000.00  
+internal:    200 x 200     (  6800,  4400 ), (  7000,  4600 )  40000     
+  placed sky130_fd_pr__pfet_01v8_7HN6Y2 at 34,22 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 34.000,  7.000), ( 35.000,  8.000)  1.000     
+lambda:   100.00 x 100.00  ( 3400.00,  700.00), ( 3500.00,  800.00)  10000.00  
+internal:    200 x 200     (  6800,  1400 ), (  7000,  1600 )  40000     
+  placed sky130_fd_pr__nfet_01v8_34VMYE at 34,7 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 45.000,  14.000), ( 46.000,  15.000)  1.000     
+lambda:   100.00 x 100.00  ( 4500.00,  1400.00), ( 4600.00,  1500.00)  10000.00  
+internal:    200 x 200     (  9000,  2800 ), (  9200,  3000 )  40000     
+Cell sky130_fd_pr__res_high_po_0p35_N4AVSQ read from current working directory
+  placed sky130_fd_pr__res_high_po_0p35_N4AVSQ at 45,14 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 49.000,  14.000), ( 50.000,  15.000)  1.000     
+lambda:   100.00 x 100.00  ( 4900.00,  1400.00), ( 5000.00,  1500.00)  10000.00  
+internal:    200 x 200     (  9800,  2800 ), ( 10000,  3000 )  40000     
+  placed sky130_fd_pr__res_high_po_0p35_N4AVSQ at 49,14 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 53.000,  14.000), ( 54.000,  15.000)  1.000     
+lambda:   100.00 x 100.00  ( 5300.00,  1400.00), ( 5400.00,  1500.00)  10000.00  
+internal:    200 x 200     ( 10600,  2800 ), ( 10800,  3000 )  40000     
+Cell sky130_fd_pr__res_high_po_0p35_S5RWJ9 read from current working directory
+  placed sky130_fd_pr__res_high_po_0p35_S5RWJ9 at 53,14 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 57.000,  14.000), ( 58.000,  15.000)  1.000     
+lambda:   100.00 x 100.00  ( 5700.00,  1400.00), ( 5800.00,  1500.00)  10000.00  
+internal:    200 x 200     ( 11400,  2800 ), ( 11600,  3000 )  40000     
+  placed sky130_fd_pr__res_high_po_0p35_S5RWJ9 at 57,14 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 61.000,  14.000), ( 62.000,  15.000)  1.000     
+lambda:   100.00 x 100.00  ( 6100.00,  1400.00), ( 6200.00,  1500.00)  10000.00  
+internal:    200 x 200     ( 12200,  2800 ), ( 12400,  3000 )  40000     
+  placed sky130_fd_pr__res_high_po_0p35_S5RWJ9 at 61,14 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  72.000 x 1.000   (-6.000,  30.000), ( 66.000,  31.000)  72.000    
+lambda:   7200.00 x 100.00  (-600.00,  3000.00), ( 6600.00,  3100.00)  720000.00 
+internal:  14400 x 200     ( -1200,  6000 ), ( 13200,  6200 )  2880000   
+  painted Vref (VDD) raiRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  72.000 x 1.000   (-6.000,  0.000), ( 66.000,  1.000)  72.000    
+lambda:   7200.00 x 100.00  (-600.00,  0.00 ), ( 6600.00,  100.00)  720000.00 
+internal:  14400 x 200     ( -1200,  0    ), ( 13200,  200  )  2880000   
+  painted VSS (gnd) raiRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   (-5.000,  20.000), (-4.000,  21.000)  1.000     
+lambda:   100.00 x 100.00  (-500.00,  2000.00), (-400.00,  2100.00)  10000.00  
+internal:    200 x 200     ( -1000,  4000 ), (  -800,  4200 )  40000     
+  port pad b1 at -5,20 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   (-5.000,  16.000), (-4.000,  17.000)  1.000     
+lambda:   100.00 x 100.00  (-500.00,  1600.00), (-400.00,  1700.00)  10000.00  
+internal:    200 x 200     ( -1000,  3200 ), (  -800,  3400 )  40000     
+  port pad b1_bar at -5,16 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   (-5.000,  12.000), (-4.000,  13.000)  1.000     
+lambda:   100.00 x 100.00  (-500.00,  1200.00), (-400.00,  1300.00)  10000.00  
+internal:    200 x 200     ( -1000,  2400 ), (  -800,  2600 )  40000     
+  port pad b0 at -5,12 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   (-5.000,  8.000), (-4.000,  9.000)  1.000     
+lambda:   100.00 x 100.00  (-500.00,  800.00), (-400.00,  900.00)  10000.00  
+internal:    200 x 200     ( -1000,  1600 ), (  -800,  1800 )  40000     
+  port pad b0_bar at -5,8 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:   1.000 x 1.000   ( 63.000,  13.000), ( 64.000,  14.000)  1.000     
+lambda:   100.00 x 100.00  ( 6300.00,  1300.00), ( 6400.00,  1400.00)  10000.00  
+internal:    200 x 200     ( 12600,  2600 ), ( 12800,  2800 )  40000     
+  port pad Vout at 63,13 uRoot cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )
+
+microns:   0.000 x 0.000   ( 0.000,  0.000), ( 0.000,  0.000)
+lambda:     0.00 x 0.00    (  0.00,  0.00 ), (  0.00,  0.00 )
+internal:      0 x 0       (     0,  0    ), (     0,  0    )
+   Generating output for cell sky130_fd_pr__nfet_01v8_34VMYE
+   Generating output for cell sky130_fd_pr__pfet_01v8_7HN6Y2
+   Generating output for cell sky130_fd_pr__res_high_po_0p35_N4AVSQ
+   Generating output for cell sky130_fd_pr__res_high_po_0p35_S5RWJ9
+   Generating output for cell dac_2bit
+=== done: dac_2bit saved to dac_2bit.mag AND dac_2bit.gds ===
+Now open dac_2bit.gds in KLayout (press F2 to zoom-fit).
+m
+m
+m
+m
+m
+l
+l
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+m
+
+% select top cell
+Topmost cell in the window
+% expand
+% view
+% 

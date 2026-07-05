@@ -1,0 +1,171 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po_0p35 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po_0p35  |Circuit 2: sky130_fd_pr__res_high_po_0p35  
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_S5RWJ9 in circuit dac_2bit (0)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_N5VJYY in circuit dac_2bit (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HYREKM in circuit dac_2bit (0)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_0p35_N4AVSQ in circuit dac_2bit (0)(2 instances)
+
+Class dac_2bit (0):  Merged 5 parallel devices.
+Subcircuit summary:
+Circuit 1: dac_2bit                        |Circuit 2: dac_2bit                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_high_po_0p35 (5)         |sky130_fd_pr__res_high_po_0p35 (5)         
+sky130_fd_pr__pfet_01v8 (4->1)             |sky130_fd_pr__pfet_01v8 (4) **Mismatch**   
+sky130_fd_pr__nfet_01v8 (4->2)             |sky130_fd_pr__nfet_01v8 (4) **Mismatch**   
+Number of devices: 8 **Mismatch**          |Number of devices: 13 **Mismatch**         
+Number of nets: 9 **Mismatch**             |Number of nets: 11 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: dac_2bit                        |Circuit 2: dac_2bit                        
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: b1_bar                                
+  sky130_fd_pr__res_high_po_0p35/3 = 5     |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/4 = 2            |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: b1                                    |Net: b1                                    
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__res_high_po_0p35/(1|2) = 1 |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+                                           |                                           
+Net: sky130_fd_pr__nfet_01v8_HYREKM_3/S    |Net: b0                                    
+  sky130_fd_pr__res_high_po_0p35/(1|2) = 1 |  sky130_fd_pr__nfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/2 = 1            
+                                           |                                           
+Net: sky130_fd_pr__nfet_01v8_HYREKM_1/S    |Net: b0_bar                                
+  sky130_fd_pr__res_high_po_0p35/(1|2) = 1 |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: sky130_fd_pr__pfet_01v8_N5VJYY_0/B    |Net: net1                                  
+  sky130_fd_pr__pfet_01v8/4 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__res_high_po_0p35/(1|2) = 1 
+                                           |                                           
+Net: sky130_fd_pr__pfet_01v8_N5VJYY_0/S    |Net: net2                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__res_high_po_0p35/(1|2) = 1 
+                                           |                                           
+(no matching net)                          |Net: Vref                                  
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__pfet_01v8/4 = 4            
+                                           |                                           
+(no matching net)                          |Net: VSS                                   
+                                           |  sky130_fd_pr__nfet_01v8/4 = 4            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |  sky130_fd_pr__res_high_po_0p35/3 = 5     
+                                           |  sky130_fd_pr__res_high_po_0p35/(1|2) = 1 
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: dac_2bit                        |Circuit 2: dac_2bit                        
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8_N5VJYY_0 |Instance: sky130_fd_pr__pfet_01v8:M2       
+  (1,3) = (7,1)                            |  (1,3) = (8,5)                            
+  2 = 7                                    |  2 = 2                                    
+  4 = 1                                    |  4 = 8                                    
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_HYREKM_0 |Instance: sky130_fd_pr__pfet_01v8:M5       
+  (1,3) = (7,2)                            |  (1,3) = (14,5)                           
+  2 = 7                                    |  2 = 2                                    
+  4 = 7                                    |  4 = 8                                    
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8_HYREKM_3 |Instance: sky130_fd_pr__pfet_01v8:M7       
+  (1,3) = (7,2)                            |  (1,3) = (8,5)                            
+  2 = 7                                    |  2 = 2                                    
+  4 = 7                                    |  4 = 8                                    
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8:M9       
+                                           |  (1,3) = (14,5)                           
+                                           |  2 = 2                                    
+                                           |  4 = 8                                    
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:M1       
+                                           |  (1,3) = (8,5)                            
+                                           |  2 = 2                                    
+                                           |  4 = 14                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:M4       
+                                           |  (1,3) = (14,5)                           
+                                           |  2 = 2                                    
+                                           |  4 = 14                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:M6       
+                                           |  (1,3) = (8,5)                            
+                                           |  2 = 2                                    
+                                           |  4 = 14                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v8:M8       
+                                           |  (1,3) = (14,5)                           
+                                           |  2 = 2                                    
+                                           |  4 = 14                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: dac_2bit                        |Circuit 2: dac_2bit                        
+-------------------------------------------|-------------------------------------------
+b1                                         |b1_bar **Mismatch**                        
+Vout                                       |Vout                                       
+(no pin, node is sky130_fd_pr__pfet_01v8_N |Vref                                       
+(no pin, node is sky130_fd_pr__pfet_01v8_N |b0                                         
+(no pin, node is sky130_fd_pr__pfet_01v8_N |b1                                         
+(no pin, node is sky130_fd_pr__pfet_01v8_N |b0_bar                                     
+(no pin, node is sky130_fd_pr__pfet_01v8_N |VSS                                        
+---------------------------------------------------------------------------------------
+Cell pin lists for dac_2bit and dac_2bit altered to match.
+Device classes dac_2bit and dac_2bit are equivalent.
+
+Final result: Top level cell failed pin matching.

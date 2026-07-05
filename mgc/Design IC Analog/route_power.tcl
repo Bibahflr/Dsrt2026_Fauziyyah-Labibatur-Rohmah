@@ -1,0 +1,39 @@
+# route_power.tcl -- placement + power routing (notch-fixed)
+source place_final.tcl
+box -6.000um 37.000um 66.000um 38.000um ; paint m1
+box -6.000um 0.000um 66.000um 1.000um ; paint m1
+box 4.645um 1.000um 4.935um 9.625um ; paint m1
+box 4.645um 35.265um 4.935um 37.000um ; paint m1
+box 4.455um 9.785um 4.685um 14.785um ; paint m1
+box 4.455um 29.830um 4.685um 34.830um ; paint m1
+box 4.040um 12.085um 4.685um 12.485um ; paint m1
+box 4.040um 12.085um 4.455um 32.530um ; paint m1
+box 4.040um 32.130um 4.685um 32.530um ; paint m1
+box 4.455um 34.830um 4.685um 37.000um ; paint m1
+box 14.645um 1.000um 14.935um 9.625um ; paint m1
+box 14.645um 35.265um 14.935um 37.000um ; paint m1
+box 14.455um 9.785um 14.685um 14.785um ; paint m1
+box 14.455um 29.830um 14.685um 34.830um ; paint m1
+box 14.455um 1.000um 14.685um 9.785um ; paint m1
+box 14.040um 12.085um 14.685um 12.485um ; paint m1
+box 14.040um 12.085um 14.455um 32.530um ; paint m1
+box 14.040um 32.130um 14.685um 32.530um ; paint m1
+box 24.645um 1.000um 24.935um 9.625um ; paint m1
+box 24.645um 35.265um 24.935um 37.000um ; paint m1
+box 24.455um 9.785um 24.685um 14.785um ; paint m1
+box 24.455um 29.830um 24.685um 34.830um ; paint m1
+box 24.040um 12.085um 24.685um 12.485um ; paint m1
+box 24.040um 12.085um 24.455um 32.530um ; paint m1
+box 24.040um 32.130um 24.685um 32.530um ; paint m1
+box 24.455um 34.830um 24.685um 37.000um ; paint m1
+box 34.645um 1.000um 34.935um 9.625um ; paint m1
+box 34.645um 35.265um 34.935um 37.000um ; paint m1
+box 34.455um 9.785um 34.685um 14.785um ; paint m1
+box 34.455um 29.830um 34.685um 34.830um ; paint m1
+box 34.455um 1.000um 34.685um 9.785um ; paint m1
+box 34.040um 12.085um 34.685um 12.485um ; paint m1
+box 34.040um 12.085um 34.455um 32.530um ; paint m1
+box 34.040um 32.130um 34.685um 32.530um ; paint m1
+select clear ; box 0 0 0 0
+save dac_2bit ; gds write dac_2bit.gds
+puts "=== route_power done ==="
